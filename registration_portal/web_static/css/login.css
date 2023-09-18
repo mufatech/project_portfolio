@@ -1,0 +1,130 @@
+body{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    
+    .input {
+        font-family: 'Poppins', sans-serif;
+    }
+
+    #form-main-wrapper {
+        width: 100%;
+        height: 100vh;
+        background: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .form-container {
+        width: 450px;
+        padding: 20px 15px;
+
+    }
+
+    .admin-avtar {
+        text-align: center;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .admin-avtar h1 {
+        font-size: 28px;
+        font-weight: 400;
+        margin-left: 15px;
+        color: black;
+    }
+
+    .form-con label {
+        display: block;
+        font-weight: 500;
+        margin-bottom: 5px;
+    }
+
+    .form-con input {
+        width: 100%;
+        font-size: 16px;
+        padding: 5px 10px;
+        font-weight: 400;
+        outline: none;
+
+    }
+
+
+    .field-con {
+        margin-bottom: 20px;
+    }
+
+    .field-con:last-child {
+        margin-bottom: 0px;
+    }
+
+    .form-btn-con input {
+        display: inline-block;
+        width: unset;
+    }
+
+    .form-btn-con input[type=checkbox] {
+        margin-right: 10px;
+    }
+
+    .add-links {
+        margin-top: 50px;
+    }
+
+    .add-links a {
+        display: block;
+        margin: 10px 0;
+        font-size: 14px;
+        color: #fff;
+    }
+
+    .form {
+        background: white;
+        padding: 40px 30px;
+        box-shadow: 0px 16px 40px rgba(0, 0, 0, 0.25);
+    }
+
+    .d-none {
+        display: none;
+    }
+
+    .form-submit {
+        background-color: skyblue;
+        border: none;
+        color: #fff;
+        padding: 8px 30px !important;
+        border: 2px solid transparent;
+        font-weight: 500 !important;
+        transition: 300ms ease-in-out;
+        cursor: pointer;
+    }
+
+    .form-submit:hover {
+        background-color: #fff;
+        border: 2px solid #8A39E1;
+        color: #8A39E1;
+    }
+
+    @media screen and (max-width:576px) {
+        .flex.form-btn-con {
+            flex-direction: column;
+        }
+
+        .sub-btn-wrap {
+            text-align: center;
+            margin-top: 25px;
+        }
+
+        .form {
+            padding: 40px 20px;
+        }
+
+        .admin-avtar h1 {
+            font-size: 25px;
+        }
+    }

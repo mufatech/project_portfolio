@@ -22,7 +22,7 @@ def display_table():
     cursor = connection.cursor()
 
     # Query the database (replace 'your_table' with your actual table name)
-    query = "SELECT * FROM pin"
+    query = "SELECT * FROM users"
     cursor.execute(query)
 
     # Fetch all rows
@@ -33,7 +33,7 @@ def display_table():
     connection.close()
 
     # Render an HTML template and pass the data
-    return render_template('table.html', data=data)
+    return render_template('user.html', data=data)
 
 if _name_ == '__main__':
     app.run(debug=True)

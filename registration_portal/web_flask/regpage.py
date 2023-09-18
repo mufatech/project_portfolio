@@ -13,16 +13,16 @@ database = "myregistration"
 def display_table():
     # Connect to the database
     connection = mysql.connector.connect(
-        host=host,
-        user=user,
-        password=password,
-        database=database
+        host=localhost,
+        user=mufatech,
+        password=mukarram,
+        database=myregistration
     )
 
     cursor = connection.cursor()
 
     # Query the database (replace 'your_table' with your actual table name)
-    query = "SELECT * FROM pin"
+    query = "SELECT * FROM regpage"
     cursor.execute(query)
 
     # Fetch all rows
@@ -33,7 +33,7 @@ def display_table():
     connection.close()
 
     # Render an HTML template and pass the data
-    return render_template('table.html', data=data)
+    return render_template('regpage.html', data=data)
 
 if _name_ == '__main__':
     app.run(debug=True)
